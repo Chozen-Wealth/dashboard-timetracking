@@ -41,14 +41,14 @@ export default function Cards({time, mode}) {
                 <div className="cardsColor">
                     <img src={icons[item.title]} alt="svg" />
                 </div>
-                <div className="cardsInfos">
-                    <div className="cardsInfosTop">
+                <div className={`cardsInfos ${mode}`}>
+                    <div className={`cardsInfosTop ${mode}`}>
                         <span>{item.title}</span>
                         <img src={points} alt="" />
                     </div>
                     <div className="cardsInfosBot">
-                        <span className="currentHours">{item.timeframes[time].current}hrs</span>
-                        <span className="previousHours">Last {correction[time]} - {item.timeframes[time].previous}hrs</span>
+                        <span className={`currentHours ${mode}`}>{item.timeframes[time].current}hrs</span>
+                        <span className={`previousHours ${mode}`}>Last {correction[time]} - {item.timeframes[time].previous}hrs</span>
                     </div>
                 </div>
             </div>

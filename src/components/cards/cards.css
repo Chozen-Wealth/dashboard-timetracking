@@ -44,11 +44,14 @@
     transition: 0.3s ease;
     cursor: pointer;
 }
-.cardInfos.light {
+.cardsInfos.light {
     background-color: rgb(189, 193, 255)
 }
 .cardsInfos:hover {
     background-color: rgb(52, 57, 123);
+}
+.cardsInfos.light:hover {
+    background-color: rgb(152, 159, 255)
 }
 .cardsInfosTop {
     display: flex;

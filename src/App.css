@@ -5,10 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s ease;
+    transition: 0.3s ease;
 }
 .app.light {
-    background-color: whitesmoke;
+    background-color: rgb(212, 226, 235);
 }
 .appContent {
     height: 600px;
