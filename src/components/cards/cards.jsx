@@ -16,6 +16,7 @@ const icons = {
     "Social": Social,
     "Self Care": Selfcare
 };
+
 const background = {
     "Work": "cards Work",
     "Play": "cards Play",
@@ -29,6 +30,7 @@ export default function Cards() {
     const timeframe = "weekly"
     return(
         <>
+        {/* Mapping ici des données JSON */}
         {data.map((item, index) => (
             <div className={background[item.title]} key={index}>
                 <div className="cardsColor">
