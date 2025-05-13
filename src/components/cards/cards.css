@@ -81,6 +81,7 @@
 .previousHours {
     color: rgb(189, 193, 255);
     font-weight: 400;
+    transition: 0.3s ease;
 }
 .previousHours.light {
     color: rgb(28, 31, 74);
