@@ -1,15 +1,38 @@
 import "./cards.css"
 import points from "../../../public/time-tracking-dashboard-main/images/icon-ellipsis.svg"
 import data from "../../../public/time-tracking-dashboard-main/data.json"
+import Exercise from "../../../public/time-tracking-dashboard-main/images/icon-exercise.svg"
+import Play from "../../../public/time-tracking-dashboard-main/images/icon-play.svg"
+import Selfcare from "../../../public/time-tracking-dashboard-main/images/icon-self-care.svg"
+import Social from "../../../public/time-tracking-dashboard-main/images/icon-social.svg"
+import Study from "../../../public/time-tracking-dashboard-main/images/icon-study.svg"
+import Work from "../../../public/time-tracking-dashboard-main/images/icon-work.svg"
+
+const icons = {
+    "Work": Work,
+    "Play": Play,
+    "Study": Study,
+    "Exercise": Exercise,
+    "Social": Social,
+    "Self Care": Selfcare
+};
+const background = {
+    "Work": "cards Work",
+    "Play": "cards Play",
+    "Study": "cards Study",
+    "Exercise": "cards Exercise",
+    "Social": "cards Social",
+    "Self Care": "cards Selfcare"
+}
 
 export default function Cards() {
     const timeframe = "weekly"
     return(
         <>
         {data.map((item, index) => (
-            <div className="cards" key={index}>
+            <div className={background[item.title]} key={index}>
                 <div className="cardsColor">
-                    <img src="svgici" alt="svg" />
+                    <img src={icons[item.title]} alt="svg" />
                 </div>
                 <div className="cardsInfos">
                     <div className="cardsInfosTop">
