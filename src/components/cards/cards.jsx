@@ -32,7 +32,7 @@ const correction = {
     "monthly": "Month",
 }
 
-export default function Cards({time}) {
+export default function Cards({time, mode}) {
     return(
         <>
         {/* Mapping ici des données JSON */}

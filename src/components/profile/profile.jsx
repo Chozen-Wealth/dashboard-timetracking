@@ -1,7 +1,7 @@
 import "./profile.css"
 import profilePic from "../../../public/time-tracking-dashboard-main/images/image-jeremy.png"
 
-export default function Profile({setTimeframe, current}) {
+export default function Profile({setTimeframe, current, mode}) {
     return(
         <div className="profile">
             <div className="profileTop">
