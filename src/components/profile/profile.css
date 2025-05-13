@@ -4,6 +4,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    transition: 0.3s ease;
 }
 .profile.light {
     background-color: rgb(189, 193, 255);
