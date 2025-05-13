@@ -8,6 +8,7 @@ import Social from "../../../public/time-tracking-dashboard-main/images/icon-soc
 import Study from "../../../public/time-tracking-dashboard-main/images/icon-study.svg"
 import Work from "../../../public/time-tracking-dashboard-main/images/icon-work.svg"
 
+// Objet pour choisir l'icone dynamiquement
 const icons = {
     "Work": Work,
     "Play": Play,
