@@ -5,6 +5,7 @@ import Cards from './components/cards/cards'
 import data from "../public/time-tracking-dashboard-main/data.json"
 
 function App() {
+  // timeframe à changer ici qui est importé là où on a besoin de l'appeler ou le changer
   const [timeframe, setTimeframe] = useState("weekly")
 
   return (
