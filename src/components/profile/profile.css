@@ -45,7 +45,12 @@
 .filter {
     color: rgb(111, 118, 200);
     cursor: pointer;
+    transition: 0.3s ease;
+    width: fit-content;
 }
 .filter.active {
+    color: white;
+}
+.filter:hover {
     color: white;
 }
