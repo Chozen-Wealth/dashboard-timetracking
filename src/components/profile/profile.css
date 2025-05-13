@@ -44,6 +44,7 @@
 }
 .filter {
     color: rgb(111, 118, 200);
+    cursor: pointer;
 }
 .filter.active {
     color: white;

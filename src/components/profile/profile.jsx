@@ -13,8 +13,7 @@ export default function Profile({setTimeframe, current}) {
             </div>
             <div className="profileBot">
                 {["daily", "weekly", "monthly"].map(period => (
-
-                    <span key={period} className={`filter ${current === period ? "active" : ""}`} onClick={()=> setTimeframe(period)} >{period}</span>
+                    <span key={period} className={`filter ${current === period ? "active" : ""}`} onClick={()=> setTimeframe(period)} >{period.charAt(0).toUpperCase() + period.slice(1)}</span>
                 ))}
             </div>
         </div>

@@ -26,6 +26,11 @@ const background = {
     "Social": "cards Social",
     "Self Care": "cards Selfcare"
 }
+const correction = {
+    "daily": "Day",
+    "weekly": "Week",
+    "monthly": "Month",
+}
 
 export default function Cards({time}) {
     return(
@@ -43,7 +48,7 @@ export default function Cards({time}) {
                     </div>
                     <div className="cardsInfosBot">
                         <span className="currentHours">{item.timeframes[time].current}hrs</span>
-                        <span className="previousHours">Last Week - {item.timeframes[time].previous}hrs</span>
+                        <span className="previousHours">Last {correction[time]} - {item.timeframes[time].previous}hrs</span>
                     </div>
                 </div>
             </div>
