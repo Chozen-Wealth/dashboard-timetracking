@@ -3,7 +3,7 @@ import profilePic from "../../../public/time-tracking-dashboard-main/images/imag
 
 export default function Profile({setTimeframe, current, mode}) {
     return(
-        <div className="profile">
+        <div className={`profile ${mode}`}>
             <div className="profileTop">
                 <img src={profilePic} alt="" />
                 <div className="profileInfos">
@@ -15,7 +15,7 @@ export default function Profile({setTimeframe, current, mode}) {
                 {/* Tableau des filtres */}
                 {["daily", "weekly", "monthly"].map(period => (
                     // On fait apparaitre avec la classe active si le nom correspond et on met la première lettre en majuscule en affichant dynamiquement
-                    <span key={period} className={`filter ${current === period ? "active" : ""}`} onClick={()=> setTimeframe(period)} >{period.charAt(0).toUpperCase() + period.slice(1)}</span>
+                    <span key={period} className={`filter ${mode} ${current === period ? "active" : ""}`} onClick={()=> setTimeframe(period)} >{period.charAt(0).toUpperCase() + period.slice(1)}</span>
                 ))}
             </div>
         </div>
