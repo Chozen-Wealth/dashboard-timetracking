@@ -1,7 +1,8 @@
 .cards {
     height: 285px;
-    width: 275px;
+    width: 270px;
     border-radius: 20px;
+    transition: 0.3s ease;
 }
 .cards.Work {
     background-color: rgb(255, 139, 100);
@@ -88,4 +89,25 @@
 }
 .previousHours.light {
     color: rgb(40, 44, 104);
+}
+
+@media (max-width:768px) {
+    .cards {
+        width: 80%;
+        height: 250px;
+    }
+    .cardsInfosBot {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .currentHours {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+@media (max-width:425px) {
+    .cards {
+        width: 90%;
+    }
 }

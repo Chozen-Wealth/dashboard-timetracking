@@ -64,3 +64,37 @@
 .filter:hover {
     color: white;
 }
+
+@media (max-width:768px) {
+    .profile {
+        width: 80%;
+        justify-self: center;
+    }
+    .profileTop {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    .profileInfos {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .profileBot {
+        flex-direction: row;
+    }
+    .filter {
+        font-size: 1.2rem;
+        align-self: center;
+    }
+}
+@media (max-width:425px) {
+    .profile {
+        width: 90%;
+    }
+    .profileName {
+        font-size: 2rem;
+    }
+    .filter {
+        font-size: 1rem;
+    }
+}
