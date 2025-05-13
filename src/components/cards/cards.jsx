@@ -16,7 +16,7 @@ const icons = {
     "Social": Social,
     "Self Care": Selfcare
 };
-
+// Objet pour choisir le background color dynamiquement
 const background = {
     "Work": "cards Work",
     "Play": "cards Play",
