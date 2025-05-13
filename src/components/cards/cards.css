@@ -73,6 +73,7 @@
     font-size: 3.5rem;
     font-weight: 300;
     margin-top: 25px;
+    transition: 0.3s ease;
 }
 .currentHours.light {
     color: rgb(15, 20, 36);
