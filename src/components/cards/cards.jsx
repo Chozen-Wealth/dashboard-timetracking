@@ -27,8 +27,7 @@ const background = {
     "Self Care": "cards Selfcare"
 }
 
-export default function Cards() {
-    const timeframe = "weekly"
+export default function Cards({time}) {
     return(
         <>
         {/* Mapping ici des données JSON */}
@@ -43,8 +42,8 @@ export default function Cards() {
                         <img src={points} alt="" />
                     </div>
                     <div className="cardsInfosBot">
-                        <span className="currentHours">{item.timeframes[timeframe].current}hrs</span>
-                        <span className="previousHours">Last Week - {item.timeframes[timeframe].previous}hrs</span>
+                        <span className="currentHours">{item.timeframes[time].current}hrs</span>
+                        <span className="previousHours">Last Week - {item.timeframes[time].previous}hrs</span>
                     </div>
                 </div>
             </div>

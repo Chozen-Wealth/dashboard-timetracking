@@ -2,16 +2,19 @@ import { useState } from 'react'
 import './App.css'
 import Profile from './components/profile/profile'
 import Cards from './components/cards/cards'
+import data from "../public/time-tracking-dashboard-main/data.json"
 
 function App() {
+  const [timeframe, setTimeframe] = useState("weekly")
+
   return (
     <div className='app'>
       <div className='appContent'>
         <div className='appLeft'>
-          <Profile/>
+          <Profile setTimeframe={setTimeframe} current={timeframe} />
         </div>
         <div className="appRight">
-          <Cards/>
+          <Cards time={timeframe} />
         </div>
       </div>
     </div>

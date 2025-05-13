@@ -1,7 +1,7 @@
 import "./profile.css"
 import profilePic from "../../../public/time-tracking-dashboard-main/images/image-jeremy.png"
 
-export default function Profile() {
+export default function Profile({setTimeframe, current}) {
     return(
         <div className="profile">
             <div className="profileTop">
@@ -12,9 +12,10 @@ export default function Profile() {
                 </div>
             </div>
             <div className="profileBot">
-                <span className="filter">Daily</span>
-                <span className="filter active">Weekly</span>
-                <span className="filter">Monthly</span>
+                {["daily", "weekly", "monthly"].map(period => (
+
+                    <span key={period} className={`filter ${current === period ? "active" : ""}`} onClick={()=> setTimeframe(period)} >{period}</span>
+                ))}
             </div>
         </div>
     )
