@@ -14,7 +14,7 @@ export default function Profile({setTimeframe, current}) {
             <div className="profileBot">
                 {/* Tableau des filtres */}
                 {["daily", "weekly", "monthly"].map(period => (
-                    // On fait apparaitre avec la classe active si le nom correspond
+                    // On fait apparaitre avec la classe active si le nom correspond et on met la première lettre en majuscule en affichant dynamiquement
                     <span key={period} className={`filter ${current === period ? "active" : ""}`} onClick={()=> setTimeframe(period)} >{period.charAt(0).toUpperCase() + period.slice(1)}</span>
                 ))}
             </div>
