@@ -48,8 +48,14 @@
     transition: 0.3s ease;
     width: fit-content;
 }
+.filter.light {
+    color: rgb(28, 31, 74);
+}
 .filter.active {
     color: white;
+}
+.filter.active.light {
+    color: rgb(15, 20, 36);
 }
 .filter:hover {
     color: white;

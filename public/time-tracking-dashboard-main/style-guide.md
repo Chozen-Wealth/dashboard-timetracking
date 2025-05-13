@@ -13,8 +13,8 @@
 
 ### Neutral
 
-- Very dark blue: hsl(226, 43%, 10%)
-- Dark blue: hsl(235, 46%, 20%)
+- Very dark blue: rgb(15, 20, 36)
+- Dark blue: rgb(28, 31, 74)
 - Desaturated blue: rgb(111, 118, 200)
 - Pale Blue: rgb(189, 193, 255)
 
