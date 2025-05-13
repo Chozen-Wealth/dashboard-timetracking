@@ -47,8 +47,8 @@
 @media (max-width:768px) {
     .appContent{
         flex-direction: column;
-        margin-top: 200px;
-        margin-bottom: 200px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     .appLeft{
         height: 300px;
@@ -57,5 +57,11 @@
     .appRight {
         height: fit-content;
         justify-content: center;
+    }
+}
+@media (max-width:425px) {
+    .appContent{
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
